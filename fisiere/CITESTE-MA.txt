@@ -1,0 +1,21 @@
+DECOR NAȘTEREA – MDF 10 mm, 8290 × 1940 mm (fără brazi)
+=========================================================
+
+Ordinea de lucru:
+  1. 06_Instructiuni/Instructiuni_executie_si_montaj.pdf  – citește întâi (debitare, CNC, finisare, montaj, tabele).
+  2. 04_Debitare/Plan_debitare_si_nesting.pdf            – cum tai fiecare din cele 6 plăci pe circular + ce piese ies din fiecare semifabricat.
+  3. 03_DXF_CNC/*.dxf                                    – fișierele de tăiat pe CNC, câte unul pe semifabricat (ex. P2-M1.dxf).
+  4. 02_Ansamblu/                                        – planșe de montaj (coduri piese, vedere de sus, nervuri) + DXF de ansamblu.
+  5. 05_Randare/                                         – randări și pagina 3D interactivă (deschide decor_3D_interactiv.html în Chrome/Safari).
+
+Fișiere DXF (mm, R2010):
+  0_FORMAT_PLACA       conturul semifabricatului – NU se taie
+  1_GAURI_D3/D4/D6/D6.5 găuri străpunse
+  2_DECUPAJ_INTERIOR   ferestre / decupaje – se taie primele (freza pe interior)
+  3_CONTUR_EXTERIOR    conturul piesei – se taie ultimul (freza pe exterior)
+  4_ETICHETE           codul piesei – NU se taie (scrie-l cu markerul pe spatele piesei)
+
+Freză: 6 mm. Fante pentru îmbinări: 10,4 mm (MDF exact 10 mm). Fă întâi o probă de potrivire.
+
+03_DXF_piese_individuale/ – fiecare piesă separat, dacă vrei să faci singur așezarea pe plăci.
+_scripts/ – sursele (Python) din care s-au generat desenele; nu sunt necesare pentru tăiere.
