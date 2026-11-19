@@ -1,12 +1,18 @@
 DECOR NAȘTEREA – MDF 10 mm, 8290 × 1940 mm (fără brazi)
 =========================================================
 
+DOUĂ VARIANTE – alege una și folosește doar fișierele ei:
+  A_cu_figuri    – Maria, Iosif și ieslea cu Pruncul se taie din MDF.
+  B_fara_figuri  – fără figuri (Iosif, Maria și Pruncul îi ai deja).
+În ambele, interiorul ieslei (peretele P-INT + pereții laterali IR) se poate scoate oricând;
+rama, tavanul și casele de peste acoperiș (P-SUS) rămân pe loc → spațiu liber sub acoperiș.
+
 Ordinea de lucru:
-  1. 06_Instructiuni/Instructiuni_executie_si_montaj.pdf  – citește întâi (debitare, CNC, finisare, montaj, tabele).
-  2. 04_Debitare/Plan_debitare_si_nesting.pdf            – cum tai fiecare din cele 6 plăci pe circular în fâșii de 2070 mm
+  1. 06_Instructiuni/Instructiuni_executie_si_montaj_<varianta>.pdf – citește întâi (debitare, CNC, finisare, montaj, tabele).
+  2. 04_Debitare/<varianta>/Plan_debitare_si_nesting.pdf            – cum tai fiecare din cele 6 plăci pe circular în fâșii de 2070 mm
                                                            (lățimi diferite, cotate) + ce piese ies din fiecare fâșie.
                                                            Restul întreg de la capătul ultimei plăci păstrează-l pentru rezerve.
-  3. 03_DXF_CNC/*.dxf                                    – fișierele de tăiat pe CNC, câte unul pe fâșie (ex. P2-B1.dxf = placa 2, fâșia 1).
+  3. 03_DXF_CNC/<varianta>/*.dxf                                    – fișierele de tăiat pe CNC, câte unul pe fâșie (ex. P2-B1.dxf = placa 2, fâșia 1).
   4. 02_Ansamblu/                                        – planșe de montaj (coduri piese, vedere de sus, nervuri) + DXF de ansamblu.
   5. 05_Randare/                                         – randări și pagina 3D interactivă (deschide decor_3D_interactiv.html în Chrome/Safari).
 
@@ -19,5 +25,5 @@ Fișiere DXF (mm, R2010):
 
 Freză: 6 mm. Fante pentru îmbinări: 10,4 mm (MDF exact 10 mm). Fă întâi o probă de potrivire.
 
-03_DXF_piese_individuale/ – fiecare piesă separat, dacă vrei să faci singur așezarea pe plăci.
+03_DXF_piese_individuale/<varianta>/ – fiecare piesă separat, dacă vrei să faci singur așezarea pe plăci.
 _scripts/ – sursele (Python) din care s-au generat desenele; nu sunt necesare pentru tăiere.
